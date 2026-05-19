@@ -1,0 +1,99 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: xchrmas
+          outputs: |
+            dist/github-snake.svg?palette=github
+            dist/github-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Patch SVG - add clipPath to clip snake overflow
+        shell: python3 {0}
+        run: |
+          import re, os
+
+          def patch(path):
+              if not os.path.exists(path):
+                  print(f"skip: {path}")
+                  return
+              svg = open(path, encoding='utf-8').read()
+
+              # Get viewBox values
+              m = re.search(r'viewBox="([^"]+)"', svg)
+              if not m:
+                  print(f"no viewBox: {path}")
+                  return
+              x, y, w, h = map(float, m.group(1).split())
+              print(f"viewBox: {x} {y} {w} {h}")
+
+              # The grid starts at x=0, y=0 (cells use x*sizeCell, y*sizeCell coords)
+              # Snake animates via CSS transform:translate which can go outside
+              # We need to clip to the actual grid area (0,0,w+x,h+y) in original coords
+              # But since we keep original viewBox, clip rect = full viewBox
+              clip_x, clip_y, clip_w, clip_h = x, y, w, h
+
+              clip_id = "snk-clip"
+              clip_def = f'<clipPath id="{clip_id}"><rect x="{clip_x}" y="{clip_y}" width="{clip_w}" height="{clip_h}"/></clipPath>'
+
+              # Add clip def inside <defs> or create new <defs>
+              if clip_id not in svg:
+                  if '<defs>' in svg:
+                      svg = svg.replace('<defs>', f'<defs>{clip_def}', 1)
+                  else:
+                      # insert after opening <svg ...>
+                      svg = re.sub(r'(<svg\b[^>]*>)', rf'\1<defs>{clip_def}</defs>', svg, count=1)
+
+              # Wrap all content (after style) in a clipped group
+              if f'clip-path="url(#{clip_id})"' not in svg:
+                  # Find end of <style>...</style> block
+                  style_end = svg.find('</style>')
+                  if style_end == -1:
+                      style_end = svg.find('>') + 1  # after opening svg tag
+                  else:
+                      style_end += len('</style>')
+
+                  insert_open = f'<g clip-path="url(#{clip_id})">'
+                  insert_close = '</g>'
+
+                  svg = svg[:style_end] + insert_open + svg[style_end:]
+                  # insert closing before </svg>
+                  svg = svg.rstrip()
+                  if svg.endswith('</svg>'):
+                      svg = svg[:-6] + insert_close + '</svg>'
+
+              open(path, 'w', encoding='utf-8').write(svg)
+              print(f"patched: {path}")
+
+          patch("dist/github-snake.svg")
+          patch("dist/github-snake-dark.svg")
+
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
