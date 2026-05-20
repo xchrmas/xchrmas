@@ -14,6 +14,7 @@
 ![CSharp](https://img.shields.io/badge/C%23_12-239120?style=for-the-badge&logo=csharp&logoColor=white)
 ![DotNet](https://img.shields.io/badge/.NET_10-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![URP](https://img.shields.io/badge/URP_|_HDRP-000000?style=for-the-badge&logo=unity&logoColor=00d4ff)
+![DOTS](https://img.shields.io/badge/DOTS%2FECS-00C49A?style=for-the-badge&logo=unity&logoColor=white)
 ![UniTask](https://img.shields.io/badge/UniTask-00d4ff?style=for-the-badge&logo=dotnet&logoColor=000)
 ![Addressables](https://img.shields.io/badge/Addressables-FF6B35?style=for-the-badge&logo=unity&logoColor=white)
 ![DOTween](https://img.shields.io/badge/DOTween-FF4081?style=for-the-badge&logo=unity&logoColor=white)
@@ -254,9 +255,9 @@
 
 | | |
 |---|---|
-| 🎮 | **3** production projects |
+| 🎮 | **4** production projects |
 | 📈 | **5** live trading strategies |
-| 🌐 | **3** domains shipped |
+| 🌐 | **4** domains shipped |
 
 </td>
 
@@ -302,7 +303,7 @@
 <table>
 <tr>
 
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 
 ### 🎮 Spaceship Battle
 
@@ -325,7 +326,7 @@
 
 </td>
 
-<td width="33%" valign="top" align="center">
+<td width="50%" valign="top" align="center">
 
 ### 🧠 Health Vision
 
@@ -347,7 +348,10 @@
 
 </td>
 
-<td width="33%" valign="top" align="center">
+</tr>
+<tr>
+
+<td width="50%" valign="top" align="center">
 
 ### 🌐 Cryptocurrency Bots
 
@@ -369,6 +373,29 @@
 
 </td>
 
+<td width="50%" valign="top" align="center">
+
+### 🌌 Galactic Empire
+
+![Unity](https://img.shields.io/badge/Unity_6_LTS-000?style=flat-square&logo=unity&logoColor=7f7fdd)
+![CSharp](https://img.shields.io/badge/C%23_13-.NET_10-239120?style=flat-square&logo=csharp&logoColor=white)
+![DOTS](https://img.shields.io/badge/DOTS%2FECS-00C49A?style=flat-square&logo=unity&logoColor=white)
+![URP](https://img.shields.io/badge/URP-000?style=flat-square&logo=unity&logoColor=7f7fdd)
+
+**Sci-Fi 4X Real-Time Strategy — procedurally generated universe**
+
+- ✅ DOTS/ECS + Burst Compiler — data-oriented, zero GC hot paths
+- ✅ Vertical Slice · CQRS · Event Sourcing · DDD
+- ✅ AI fleet — Behavior Trees · GOAP · Utility AI · ML-Agents 3.0
+- ✅ Multiplayer — Netcode for Entities · CSP · Photon Fusion 2
+- ✅ Procedural universe — WFC · Marching Cubes · Perlin/Simplex Noise
+
+`VContainer` `R3` `UniTask` `Unity Sentis` `VFX Graph`
+
+[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github)](https://github.com/xchrmas/Galactic-Empire)
+
+</td>
+
 </tr>
 </table>
 
@@ -381,12 +408,19 @@
 | **MVP** | Spaceship Battle | Model · View · Presenter — zero coupling |
 | **MVVM** | Health Vision | ViewModel + R3 ReactiveProperty |
 | **MVC** | Crypto Bots | Controller separation per strategy |
+| **Vertical Slice** | Galactic Empire | Feature-first — Galaxy · Fleet · Combat · Economy |
+| **CQRS** | Galactic Empire | Commands + Queries separated per ECS system |
+| **Event Sourcing** | Galactic Empire | Deterministic state replay for multiplayer |
+| **DDD** | Galactic Empire | Rich domain model — Empire · Fleet · Planet aggregates |
 | **Clean Architecture** | All projects | Domain → Application → Infrastructure |
 | **Service Locator** | Spaceship Battle | Replaces Zenject — 60 lines, transparent |
 | **FSM** | Spaceship Battle | Patrol → Aggressive at 50% enemy HP |
 | **Object Pool** | Spaceship Battle | HashSet O(1) + Unity ObjectPool |
 | **Observer** | All projects | C# events — zero UniRx, zero allocations |
-| **DI (VContainer)** | Health Vision | Constructor injection per layer |
+| **DI (VContainer)** | Health Vision · Galactic Empire | Constructor injection per layer |
+| **DOTS/ECS** | Galactic Empire | Data-oriented systems — Burst-compiled, zero GC |
+| **Behavior Trees** | Galactic Empire | Fleet AI — Scout · Attack · Retreat states |
+| **GOAP** | Galactic Empire | Goal-oriented action planning for empire AI |
 
 ---
 
@@ -408,6 +442,38 @@
 | DOTween | 1.2.x | UI animations |
 | TextMeshPro | Built-in | UI text rendering |
 | Unity ObjectPool | Built-in | Zero GC allocations |
+
+</details>
+
+<details>
+<summary><b>🌌 Galactic Empire — Sci-Fi 4X Strategy</b></summary>
+<br/>
+
+| Technology | Version | Purpose |
+|---|---|---|
+| Unity | 6000.3.12f1 LTS | Engine |
+| C# | 13.0 | Language |
+| .NET | 10 | Runtime |
+| URP | Built-in | Render Pipeline + Forward+ |
+| DOTS / ECS | 1.3+ | Data-oriented entity systems |
+| Burst Compiler | Latest | SIMD-optimized job compilation |
+| C# Job System | Built-in | Multithreaded simulation |
+| Havok Physics | Built-in | High-performance physics |
+| Netcode for Entities | Latest | DOTS multiplayer + CSP |
+| Photon Fusion 2 | 2.x | Relay + matchmaking |
+| VContainer | Latest | Constructor DI per layer |
+| R3 | Latest | Reactive extensions |
+| UniTask | 2.x | Async without coroutines |
+| Unity Sentis | Latest | On-device neural inference |
+| ML-Agents | 3.0 | Reinforcement learning fleet AI |
+| VFX Graph | Built-in | GPU particle nebulae & explosions |
+| Shader Graph | Built-in | Procedural planet & ship shaders |
+| Cinemachine | 3.x | Dynamic RTS camera system |
+| UI Toolkit (USS/UXML) | Built-in | Data-driven empire UI |
+| Addressables | 2.x | Async streaming of galaxy chunks |
+| PlayFab | Latest | Backend · leaderboards · economy |
+| Nakama | Latest | Open-source game server |
+| Docker | Latest | Containerised dedicated servers |
 
 </details>
 
