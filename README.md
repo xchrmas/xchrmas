@@ -313,11 +313,11 @@
 
 **3D Space Shooter — rebuilt from scratch**
 
-✅ Zero external DI — custom Service Locator
-✅ MVP Architecture · Enemy FSM
-✅ Object Pooling — HashSet O(1)
-✅ C# events — zero UniRx dependency
-✅ GameConstants — zero magic numbers
+- ✅ Zero external DI — custom Service Locator
+- ✅ MVP Architecture · Enemy FSM
+- ✅ Object Pooling — HashSet O(1)
+- ✅ C# events — zero UniRx dependency
+- ✅ GameConstants — zero magic numbers
 
 `Addressables` `UniTask` `DOTween` `Shader Graph`
 
@@ -336,11 +336,11 @@
 
 **3D Medical Visualization Platform**
 
-✅ DICOM CT/MRI loading & parsing
-✅ GPU Raymarching volume rendering
-✅ AI auto-segmentation via ONNX
-✅ MVVM + Clean Architecture
-✅ AR Foundation spatial anchors
+- ✅ DICOM CT/MRI loading & parsing
+- ✅ GPU Raymarching volume rendering
+- ✅ AI auto-segmentation via ONNX
+- ✅ MVVM + Clean Architecture
+- ✅ AR Foundation spatial anchors
 
 `VContainer` `R3` `ONNX Runtime` `AR Foundation`
 
@@ -361,11 +361,11 @@
 
 **5 Trading Strategies · Real-time**
 
-✅ Spot Grid Bot Pro
-✅ Futures Martingale
-✅ TWAP Bot on Spot
-✅ TradFi Combo · DCA
-✅ Real-time Binance WebSocket
+- ✅ Spot Grid Bot Pro
+- ✅ Futures Martingale
+- ✅ TWAP Bot on Spot
+- ✅ TradFi Combo · DCA
+- ✅ Real-time Binance WebSocket
 
 `Binance.Net` `Serilog` `Spectre.Console`
 
@@ -384,11 +384,11 @@
 
 **Sci-Fi 4X Real-Time Strategy — procedurally generated universe**
 
-✅ DOTS/ECS + Burst Compiler — data-oriented, zero GC hot paths
-✅ Vertical Slice · CQRS · Event Sourcing · DDD
-✅ AI fleet — Behavior Trees · GOAP · Utility AI · ML-Agents 3.0
-✅ Multiplayer — Netcode for Entities · CSP · Photon Fusion 2
-✅ Procedural universe — WFC · Marching Cubes · Perlin/Simplex Noise
+- ✅ DOTS/ECS + Burst Compiler — data-oriented, zero GC hot paths
+- ✅ Vertical Slice · CQRS · Event Sourcing · DDD
+- ✅ AI fleet — Behavior Trees · GOAP · Utility AI · ML-Agents 3.0
+- ✅ Multiplayer — Netcode for Entities · CSP · Photon Fusion 2
+- ✅ Procedural universe — WFC · Marching Cubes · Perlin/Simplex Noise
 
 `VContainer` `R3` `UniTask` `Unity Sentis` `VFX Graph`
 
