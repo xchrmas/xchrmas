@@ -302,98 +302,93 @@
 
 <table>
 <tr>
-<td width="8%" align="center">🎮</td>
-<td width="32%">
 
-**[Spaceship Battle](https://github.com/xchrmas/spaceship-battle)**
-![Unity](https://img.shields.io/badge/Unity_6-000?style=flat-square&logo=unity&logoColor=00d4ff) ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white) ![URP](https://img.shields.io/badge/URP-000?style=flat-square&logo=unity&logoColor=00d4ff)
+<td width="50%" valign="top">
 
-</td>
-<td width="45%">
+### 🎮 Spaceship Battle
 
-3D Space Shooter — rebuilt from scratch<br/>
-✅ MVP · Custom Service Locator · Zero external DI<br/>
-✅ Object Pool HashSet O(1) · Enemy FSM · Zero magic numbers<br/>
+![Unity](https://img.shields.io/badge/Unity_6-000?style=flat-square&logo=unity&logoColor=00d4ff)
+![C#](https://img.shields.io/badge/C%23_12-239120?style=flat-square&logo=csharp&logoColor=white)
+![URP](https://img.shields.io/badge/URP-000?style=flat-square&logo=unity&logoColor=00d4ff)
+
+**3D Space Shooter — rebuilt from scratch**
+
+- ✅ MVP Architecture · Custom Service Locator
+- ✅ Object Pool HashSet O(1) · Enemy FSM
+- ✅ C# events · Zero UniRx · Zero magic numbers
+
 `Addressables` `UniTask` `DOTween` `Shader Graph`
 
-</td>
-<td width="15%" align="center">
-
-[![Play](https://img.shields.io/badge/▶_Play-FF2449?style=flat-square&logo=itch.io&logoColor=white)](https://dynamic-game-technologies.itch.io/spaceship-battle)<br/>
-[![Code](https://img.shields.io/badge/Source-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/xchrmas/spaceship-battle)
+[![Play](https://img.shields.io/badge/▶%20Play%20Now-FF2449?style=for-the-badge&logo=itch.io&logoColor=white)](https://dynamic-game-technologies.itch.io/spaceship-battle)
+[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xchrmas/spaceship-battle)
 
 </td>
-</tr>
 
-<tr>
-<td align="center">🧠</td>
-<td>
+<td width="50%" valign="top">
 
-**[Health Vision](https://github.com/xchrmas/health-vision)**
-![Unity](https://img.shields.io/badge/Unity_6-000?style=flat-square&logo=unity&logoColor=22c55e) ![HDRP](https://img.shields.io/badge/HDRP-000?style=flat-square&logo=unity&logoColor=22c55e) ![DICOM](https://img.shields.io/badge/fo--dicom-ff3b3b?style=flat-square)
+### 🧠 Health Vision
 
-</td>
-<td>
+![Unity](https://img.shields.io/badge/Unity_6-000?style=flat-square&logo=unity&logoColor=22c55e)
+![HDRP](https://img.shields.io/badge/HDRP-000?style=flat-square&logo=unity&logoColor=22c55e)
+![DICOM](https://img.shields.io/badge/fo--dicom-ff3b3b?style=flat-square)
 
-3D Medical Visualization Platform<br/>
-✅ DICOM CT/MRI · GPU Raymarching · ONNX AI segmentation<br/>
-✅ MVVM + Clean Architecture · AR Foundation spatial anchors<br/>
+**3D Medical Visualization Platform**
+
+- ✅ DICOM CT/MRI loading · GPU Raymarching
+- ✅ AI auto-segmentation via ONNX Runtime
+- ✅ MVVM + Clean Architecture · AR Foundation
+
 `VContainer` `R3` `ONNX Runtime` `AR Foundation`
 
-</td>
-<td align="center">
-
-[![Code](https://img.shields.io/badge/Source-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/xchrmas/health-vision)
+[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xchrmas/health-vision)
 
 </td>
+
 </tr>
 
 <tr>
-<td align="center">📈</td>
-<td>
 
-**[Cryptocurrency Bots](https://github.com/xchrmas/crypto-bots)**
-![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=flat-square&logo=dotnet&logoColor=white) ![Binance](https://img.shields.io/badge/Binance-F3BA2F?style=flat-square&logo=binance&logoColor=000) ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white)
+<td width="50%" valign="top">
 
-</td>
-<td>
+### 📈 Cryptocurrency Bots
 
-5 Trading Strategies · Real-time Binance WebSocket<br/>
-✅ Spot Grid · Futures Martingale · TWAP · DCA · TradFi Combo<br/>
-✅ System.Threading.Channels · High-throughput concurrency<br/>
+![.NET](https://img.shields.io/badge/.NET_10-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![Binance](https://img.shields.io/badge/Binance-F3BA2F?style=flat-square&logo=binance&logoColor=000)
+![C#](https://img.shields.io/badge/C%23_12-239120?style=flat-square&logo=csharp&logoColor=white)
+
+**5 Trading Strategies · Real-time**
+
+- ✅ Spot Grid · Futures Martingale · TWAP · DCA
+- ✅ Real-time Binance WebSocket · TradFi Combo
+- ✅ Threading.Channels · High-throughput concurrency
+
 `Binance.Net` `Serilog` `Spectre.Console`
 
-</td>
-<td align="center">
-
-[![Code](https://img.shields.io/badge/Source-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/xchrmas/crypto-bots)
+[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xchrmas/crypto-bots)
 
 </td>
+
+<td width="50%" valign="top">
+
+### 🌌 Galactic Empire
+
+![Unity](https://img.shields.io/badge/Unity_6_LTS-000?style=flat-square&logo=unity&logoColor=7f7fdd)
+![C#](https://img.shields.io/badge/C%23_13-.NET_10-239120?style=flat-square&logo=csharp&logoColor=white)
+![DOTS](https://img.shields.io/badge/DOTS%2FECS-00C49A?style=flat-square&logo=unity&logoColor=white)
+
+**Sci-Fi 4X RTS · Procedurally generated universe**
+
+- ✅ DOTS/ECS + Burst · Vertical Slice · CQRS · DDD
+- ✅ AI Fleet — Behavior Trees · GOAP · ML-Agents
+- ✅ Netcode Multiplayer · CSP · WFC Proc-Gen
+
+`VContainer` `R3` `Unity Sentis` `VFX Graph`
+
+[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xchrmas/Galactic-Empire)
+
+</td>
+
 </tr>
-
-<tr>
-<td align="center">🌌</td>
-<td>
-
-**[Galactic Empire](https://github.com/xchrmas/Galactic-Empire)**
-![Unity](https://img.shields.io/badge/Unity_6_LTS-000?style=flat-square&logo=unity&logoColor=7f7fdd) ![C#](https://img.shields.io/badge/C%23_13-.NET_10-239120?style=flat-square&logo=csharp&logoColor=white) ![DOTS](https://img.shields.io/badge/DOTS%2FECS-00C49A?style=flat-square&logo=unity&logoColor=white)
-
-</td>
-<td>
-
-Sci-Fi 4X Real-Time Strategy · Procedurally generated universe<br/>
-✅ DOTS/ECS + Burst · Vertical Slice · CQRS · Event Sourcing<br/>
-✅ AI Fleet BTs/GOAP · Netcode Multiplayer · WFC Proc-Gen<br/>
-`VContainer` `R3` `Unity Sentis` `VFX Graph` `Photon Fusion 2`
-
-</td>
-<td align="center">
-
-[![Code](https://img.shields.io/badge/Source-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/xchrmas/Galactic-Empire)
-
-</td>
-</tr>
-
 </table>
 
 ---
