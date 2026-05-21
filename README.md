@@ -364,7 +364,7 @@
 
 `Binance.Net` `Serilog` `Spectre.Console`
 
-[![Code](https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/xchrmas/crypto-bots)
+[Code](https://github.com/xchrmas/Cryptocurrency-Bots)
 
 </td>
 
