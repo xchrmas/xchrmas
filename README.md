@@ -520,15 +520,6 @@
 
 </div>
 
----
-
-## 📈 Activity Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=xchrmas&custom_title=ALEX+%F0%9F%8E%AE+Contribution+Graph&theme=tokyo-night&bg_color=0d1117&color=00d4ff&line=00d4ff&point=5efce8&area=true&area_color=00d4ff&hide_border=false&border_color=1e3a5f" width="100%"/>
-
-</div>
 
 ---
 
