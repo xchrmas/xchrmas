@@ -512,10 +512,6 @@
 
 <div align="center">
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=xchrmas&theme=tokyonight&background=0d1117&ring=00d4ff&fire=ff4081&currStreakLabel=00d4ff&border=1e3a5f"/>
-
-<br/>
-
 <img src="./trophies-v1-neon.svg" width="100%" alt="Trophies"/>
 
 </div>
