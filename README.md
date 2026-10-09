@@ -281,9 +281,6 @@
 
 <br/>
 
-> *"Zero magic numbers.*
-> *Every decision explainable."*
-
 </td>
 
 </tr>
