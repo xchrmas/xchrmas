@@ -279,12 +279,6 @@
 <!-- Open to -->
 <td width="25%" valign="top">
 
-**🌐 Open to**
-
-![Freelance](https://img.shields.io/badge/Freelance-001828?style=flat&logoColor=00d4ff)
-![Collaboration](https://img.shields.io/badge/Collaboration-001828?style=flat&logoColor=00d4ff)
-![AI Game Dev](https://img.shields.io/badge/AI_×_Game_Dev_R%26D-2a0018?style=flat&logoColor=ec4899)
-
 <br/>
 
 > *"Zero magic numbers.*
